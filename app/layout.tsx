@@ -1,20 +1,21 @@
-import { GeistSans } from 'geist/font/sans'
-import './globals.css'
+import { GeistSans } from "geist/font/sans";
+import "./globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
-  : 'http://localhost:3000'
+  : "http://localhost:3000";
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: 'Next.js and Supabase Starter Kit',
-  description: 'The fastest way to build apps with Next.js and Supabase',
-}
+  title: "클라이머 유형 테스트",
+  description:
+    "클라이밍 하고 싶다... 난 어떤 유형일까? 재미로 하는 클라이머 유형 테스트",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={GeistSans.className}>
@@ -24,5 +25,5 @@ export default function RootLayout({
         </main>
       </body>
     </html>
-  )
+  );
 }
