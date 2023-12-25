@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 
-export default async function HomePage() {
+export default function HomePage() {
   const router = useRouter();
 
   const handleStartClick = () => {
