@@ -40,9 +40,7 @@ const calcMap: Record<
 
 export const calcResult = (num: QuestionNumberType, type: AnswerType) => {
   const targetScore = calcMap[num][type];
-  if (typeof targetScore === "undefined") {
-    throw new Error("Wrong Question Data");
-  }
+  if (typeof targetScore === "undefined") return;
   scores[targetScore]++;
 };
 
